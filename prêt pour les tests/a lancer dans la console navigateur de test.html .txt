@@ -1,0 +1,4 @@
+
+Lancer dans la console:
+
+alignAll("A", 10, 10, false, false, false, false, false, 5, 5)

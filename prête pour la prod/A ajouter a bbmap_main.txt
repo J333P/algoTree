@@ -1,0 +1,17 @@
+    treeClassification : function(e){
+        e.preventDefault();
+        var pere = this.lastModel.get('id');
+        var vertical = true
+        var mirror = false
+        var dossier = false
+        var dossier2 = false
+        var compact = false
+        var elements = TreeClassification.alignAll(bbmap.views.main.elements.toJSON(), pere, 50, 50, vertical, mirror, dossier, dossier2, compact);
+        elements.forEach(function(el){
+            bbmap.views.main.elements.get(el.id).save(el)
+        });
+        setTimeout(function(){
+            bbmap.views.main.instance.repaintEverything();
+            bbmap.views.main.svgWindowController();
+        },1000);
+    },
