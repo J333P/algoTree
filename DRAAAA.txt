@@ -1,0 +1,1 @@
+Alan Jay Perlis: “Les inconscients ignorent la complexité. Les pragmatistes en souffrent. Certains parviennent à l'éviter. Les génies la suppriment...”
